@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 rounded-md bg-primary-600 flex items-center justify-center text-white">
+              <div className="h-8 w-8 rounded-md bg-skop-blue flex items-center justify-center text-white">
                 <span className="font-mono font-bold text-lg">{"{}"}</span>
               </div>
-              <span className="text-lg font-semibold text-white">SKOP</span>
+              <span className="text-lg font-semibold text-skop-orange">SKOP</span>
             </Link>
             <p className="mb-4 text-gray-400">
               A community of programmers sharing knowledge and growing together on Telegram.
@@ -26,7 +26,7 @@ export default function Footer() {
                 href="https://t.me/some_kind_of_programmers" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-gray-300 hover:text-white"
+                className="text-skop-blue hover:text-white"
               >
                 <FaTelegram className="text-xl" />
               </a>
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-skop-orange font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <button 
@@ -84,13 +84,13 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
+            <h3 className="text-skop-orange font-semibold mb-4">Contact</h3>
             <p className="text-gray-400 mb-2">
               Have questions about our community?
             </p>
             <a 
               href="https://t.me/some_kind_of_programmers" 
-              className="inline-flex items-center text-primary-400 hover:text-primary-300"
+              className="inline-flex items-center text-skop-blue hover:text-blue-300"
               target="_blank"
               rel="noopener noreferrer"
             >
