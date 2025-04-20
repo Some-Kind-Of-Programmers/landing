@@ -79,7 +79,7 @@ export default function CommunitySection() {
                   <p className="text-gray-600 mb-6">
                     Connect with over 1,000 developers who are sharing knowledge, helping each other, and building amazing things together.
                   </p>
-                  <Button asChild>
+                  <Button asChild className="bg-skop-orange hover:bg-skop-orange/90 text-white">
                     <a 
                       href="https://t.me/some_kind_of_programmers" 
                       target="_blank" 
@@ -93,10 +93,10 @@ export default function CommunitySection() {
                 </div>
                 <div className="md:w-1/3 flex justify-center">
                   <div className="relative">
-                    <div className="w-24 h-24 md:w-32 md:h-32 bg-primary-100 rounded-full flex items-center justify-center">
-                      <FaTelegram className="text-primary-600 text-5xl md:text-6xl" />
+                    <div className="w-24 h-24 md:w-32 md:h-32 bg-blue-100 rounded-full flex items-center justify-center">
+                      <FaTelegram className="text-skop-blue text-5xl md:text-6xl" />
                     </div>
-                    <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                    <div className="absolute -top-2 -right-2 bg-skop-orange text-white text-xs font-bold px-2 py-1 rounded-full">
                       LIVE
                     </div>
                   </div>
