@@ -42,7 +42,7 @@ export default function CTASection() {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-2 border-white text-white hover:bg-white hover:text-skop-blue flex items-center"
+            className="border-2 border-white text-white hover:bg-white hover:text-skop-blue flex items-center bg-skop-blue/50"
             onClick={handleShare}
           >
             <FaShareAlt className="mr-2" />

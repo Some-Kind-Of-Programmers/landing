@@ -28,7 +28,7 @@ export default function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-skop-blue"
+                className="border-white text-white hover:bg-white hover:text-skop-blue bg-skop-blue/30"
                 onClick={handleLearnMoreClick}
               >
                 Learn More
