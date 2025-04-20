@@ -26,7 +26,7 @@ export default function Footer() {
                 href="https://t.me/some_kind_of_programmers" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-skop-blue hover:text-white"
+                className="text-blue-300 hover:text-white"
               >
                 <FaTelegram className="text-xl" />
               </a>
@@ -90,7 +90,7 @@ export default function Footer() {
             </p>
             <a 
               href="https://t.me/some_kind_of_programmers" 
-              className="inline-flex items-center text-skop-blue hover:text-blue-300"
+              className="inline-flex items-center text-blue-300 hover:text-white"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -5,7 +5,7 @@ export default function FeaturesSection() {
     <section id="features" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Why Join Our Community?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-skop-blue mb-4">Why Join Our Community?</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             We offer a unique blend of learning, networking, and technical growth opportunities.
           </p>
@@ -87,7 +87,7 @@ export default function FeaturesSection() {
                   <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
                     <div className="text-sm font-medium text-gray-800">Jamie Doe</div>
                     <p className="text-sm text-gray-700">
-                      I can help too. I found this great tutorial that might be useful: <span className="text-skop-blue">link.example.com/nextjs-guide</span>
+                      I can help too. I found this great tutorial that might be useful: <span className="text-blue-600">link.example.com/nextjs-guide</span>
                     </p>
                   </div>
                 </div>
