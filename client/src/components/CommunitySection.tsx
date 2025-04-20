@@ -53,7 +53,7 @@ export default function CommunitySection() {
     <section id="community" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Community Spotlight</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-skop-blue mb-4">Community Spotlight</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             Hear from our members about what makes Some Kind Of Programmers special.
           </p>
@@ -75,7 +75,7 @@ export default function CommunitySection() {
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="md:w-2/3 mb-6 md:mb-0 md:pr-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Ready to join our growing community?</h3>
+                  <h3 className="text-2xl font-bold text-skop-blue mb-4">Ready to join our growing community?</h3>
                   <p className="text-gray-600 mb-6">
                     Connect with over 1,000 developers who are sharing knowledge, helping each other, and building amazing things together.
                   </p>

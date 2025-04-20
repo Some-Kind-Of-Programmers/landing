@@ -45,7 +45,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Our Community</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-skop-blue mb-4">About Our Community</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             We're building a place where programmers of all skill levels can connect, learn, and grow together.
           </p>
