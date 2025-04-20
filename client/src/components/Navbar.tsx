@@ -22,42 +22,43 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-md bg-primary-600 flex items-center justify-center text-white">
-                <span className="font-mono font-bold text-lg">{"{}"}</span>
-              </div>
-              <span className="text-lg font-semibold text-gray-800">SKOP</span>
+              <img src="/logo.png" alt="SKOP Logo" className="h-8 w-auto" />
+              <span className="text-lg font-semibold text-skop-blue">SKOP</span>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <Button 
               variant="ghost" 
-              className="text-gray-600 hover:text-primary-600" 
+              className="text-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("about")}
             >
               About
             </Button>
             <Button 
               variant="ghost" 
-              className="text-gray-600 hover:text-primary-600" 
+              className="text-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("features")}
             >
               Features
             </Button>
             <Button 
               variant="ghost" 
-              className="text-gray-600 hover:text-primary-600" 
+              className="text-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("community")}
             >
               Community
             </Button>
             <Button 
               variant="ghost" 
-              className="text-gray-600 hover:text-primary-600" 
+              className="text-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("faq")}
             >
               FAQ
             </Button>
-            <Button asChild>
+            <Button 
+              asChild 
+              className="bg-skop-orange hover:bg-skop-orange/90 text-white"
+            >
               <a href="https://t.me/some_kind_of_programmers" target="_blank" rel="noopener noreferrer">
                 Join Now
               </a>
@@ -77,33 +78,36 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
             <Button 
               variant="ghost" 
-              className="w-full justify-start text-gray-600 hover:text-primary-600 hover:bg-gray-50" 
+              className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("about")}
             >
               About
             </Button>
             <Button 
               variant="ghost" 
-              className="w-full justify-start text-gray-600 hover:text-primary-600 hover:bg-gray-50" 
+              className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("features")}
             >
               Features
             </Button>
             <Button 
               variant="ghost" 
-              className="w-full justify-start text-gray-600 hover:text-primary-600 hover:bg-gray-50" 
+              className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("community")}
             >
               Community
             </Button>
             <Button 
               variant="ghost" 
-              className="w-full justify-start text-gray-600 hover:text-primary-600 hover:bg-gray-50" 
+              className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("faq")}
             >
               FAQ
             </Button>
-            <Button className="w-full" asChild>
+            <Button 
+              className="w-full bg-skop-orange hover:bg-skop-orange/90 text-white" 
+              asChild
+            >
               <a href="https://t.me/some_kind_of_programmers" target="_blank" rel="noopener noreferrer">
                 Join Now
               </a>

@@ -11,3 +11,56 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+:root {
+  --skop-blue: #3C85C4;
+  --skop-orange: #F06715;
+}
+
+.bg-skop-blue {
+  background-color: var(--skop-blue);
+}
+
+.bg-skop-orange {
+  background-color: var(--skop-orange);
+}
+
+.text-skop-blue {
+  color: var(--skop-blue);
+}
+
+.text-skop-orange {
+  color: var(--skop-orange);
+}
+
+.border-skop-blue {
+  border-color: var(--skop-blue);
+}
+
+.border-skop-orange {
+  border-color: var(--skop-orange);
+}
+
+.hover\:bg-skop-blue:hover {
+  background-color: var(--skop-blue);
+}
+
+.hover\:bg-skop-orange:hover {
+  background-color: var(--skop-orange);
+}
+
+.hover\:text-skop-blue:hover {
+  color: var(--skop-blue);
+}
+
+.hover\:text-skop-orange:hover {
+  color: var(--skop-orange);
+}
+
+.hover\:border-skop-blue:hover {
+  border-color: var(--skop-blue);
+}
+
+.hover\:border-skop-orange:hover {
+  border-color: var(--skop-orange);
+}

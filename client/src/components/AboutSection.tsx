@@ -11,7 +11,7 @@ interface AboutItemProps {
 const AboutItem: React.FC<AboutItemProps> = ({ icon, title, description }) => (
   <Card className="bg-white hover:shadow-md transition-shadow">
     <CardContent className="p-8">
-      <div className="text-primary-600 mb-4 text-3xl">
+      <div className="text-skop-blue mb-4 text-3xl">
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
@@ -63,7 +63,7 @@ export default function AboutSection() {
         </div>
         
         <div className="mt-16 flex justify-center">
-          <Button asChild>
+          <Button asChild className="bg-skop-orange hover:bg-skop-orange/90 text-white">
             <a 
               href="https://t.me/some_kind_of_programmers" 
               target="_blank" 

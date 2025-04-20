@@ -14,7 +14,7 @@ export default function FeaturesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="flex flex-col justify-center">
             <div className="mb-8">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600 mb-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-skop-blue mb-4">
                 <FaCodeBranch className="h-5 w-5" />
               </div>
               <h3 className="text-2xl font-semibold mb-2">Real-time Technical Discussions</h3>
