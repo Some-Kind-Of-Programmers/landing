@@ -14,7 +14,7 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, value }) => (
   <AccordionItem value={value} className="mb-6 border-none">
-    <AccordionTrigger className="flex justify-between items-center w-full text-left p-4 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500 text-lg font-medium text-gray-800">
+    <AccordionTrigger className="flex justify-between items-center w-full text-left p-4 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-skop-blue text-lg font-medium text-gray-800">
       {question}
     </AccordionTrigger>
     <AccordionContent className="p-4 bg-white text-gray-600">
@@ -51,7 +51,7 @@ export default function FAQSection() {
     <section id="faq" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-skop-blue mb-4">Frequently Asked Questions</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             Common questions about our Telegram community.
           </p>
@@ -71,7 +71,7 @@ export default function FAQSection() {
           
           <div className="mt-10 text-center">
             <p className="text-gray-600 mb-4">Still have questions?</p>
-            <Button asChild variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white">
+            <Button asChild variant="outline" className="border-skop-orange text-skop-orange hover:bg-skop-orange hover:text-white">
               <a 
                 href="https://t.me/some_kind_of_programmers" 
                 target="_blank" 
