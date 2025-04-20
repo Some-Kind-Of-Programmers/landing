@@ -9,7 +9,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="pt-10 pb-20 bg-gradient-to-br from-skop-blue to-skop-blue/80 text-white relative">
+    <section className="pt-10 pb-20 bg-gradient-to-br from-gray-900 to-skop-blue/90 text-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
