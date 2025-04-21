@@ -6,13 +6,13 @@ export default function CTASection() {
     if (navigator.share) {
       navigator.share({
         title: 'Some Kind Of Programmers',
-        text: 'Join this awesome Telegram community for programmers!',
+        text: 'Присоединяйся к нашему коммьюнити!',
         url: 'https://t.me/some_kind_of_programmers',
       });
     } else {
       navigator.clipboard.writeText('https://t.me/some_kind_of_programmers')
         .then(() => {
-          alert('Link copied to clipboard! Share it with your friends.');
+          alert('Ссылка скопирована в буффер обмена! Теперь ты можешь поделиться ей.');
         })
         .catch((err) => {
           console.error('Could not copy text: ', err);
@@ -23,9 +23,9 @@ export default function CTASection() {
   return (
     <section className="py-16 bg-skop-blue text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Some Kind Of Programmers Today</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Присоединяйся к Some Kind Of Programmers прямо сейчас</h2>
         <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto mb-8">
-          Be part of a supportive community where you can learn, share, and grow as a developer.
+          Становись частью сообщества, где ты будешь сможешь достичь небывалых высот в нетворкинге!
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-skop-orange text-white hover:bg-skop-orange/90">
@@ -36,7 +36,7 @@ export default function CTASection() {
               className="flex items-center"
             >
               <FaTelegram className="mr-2 text-xl" />
-              Join our Telegram
+              Присоединиться
             </a>
           </Button>
           <Button 
@@ -46,7 +46,7 @@ export default function CTASection() {
             onClick={handleShare}
           >
             <FaShareAlt className="mr-2" />
-            Share with others
+            Поделиться сообществом с коллегами/друзьями
           </Button>
         </div>
       </div>

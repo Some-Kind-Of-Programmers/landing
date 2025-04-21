@@ -32,21 +32,21 @@ export default function Navbar() {
               className="text-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("about")}
             >
-              About
+              О нас
             </Button>
             <Button 
               variant="ghost" 
               className="text-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("features")}
             >
-              Features
+              Зачем тебе SKOP
             </Button>
             <Button 
               variant="ghost" 
-              className="text-gray-600 hover:text-skop-blue" 
+              className="textWelcome-gray-600 hover:text-skop-blue" 
               onClick={() => handleNavClick("community")}
             >
-              Community
+              Что о нас говорят
             </Button>
             <Button 
               variant="ghost" 
@@ -54,14 +54,6 @@ export default function Navbar() {
               onClick={() => handleNavClick("faq")}
             >
               FAQ
-            </Button>
-            <Button 
-              asChild 
-              className="bg-skop-orange hover:bg-skop-orange/90 text-white"
-            >
-              <a href="https://t.me/some_kind_of_programmers" target="_blank" rel="noopener noreferrer">
-                Join Now
-              </a>
             </Button>
           </div>
           <div className="flex md:hidden items-center">
@@ -81,21 +73,21 @@ export default function Navbar() {
               className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("about")}
             >
-              About
+              О нас
             </Button>
             <Button 
               variant="ghost" 
               className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("features")}
             >
-              Features
+              Зачем тебе SKOP
             </Button>
             <Button 
               variant="ghost" 
               className="w-full justify-start text-gray-600 hover:text-skop-blue hover:bg-gray-50" 
               onClick={() => handleNavClick("community")}
             >
-              Community
+              Что о нас говорят
             </Button>
             <Button 
               variant="ghost" 
@@ -109,7 +101,7 @@ export default function Navbar() {
               asChild
             >
               <a href="https://t.me/some_kind_of_programmers" target="_blank" rel="noopener noreferrer">
-                Join Now
+                Присоединиться
               </a>
             </Button>
           </div>

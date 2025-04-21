@@ -6,14 +6,20 @@ interface TestimonialProps {
   message: string;
   name: string;
   role: string;
+  ratedStars: number;
 }
 
-const Testimonial: React.FC<TestimonialProps> = ({ message, name, role }) => (
+const Testimonial: React.FC<TestimonialProps> = ({
+  message,
+  name,
+  role,
+  ratedStars,
+}) => (
   <Card className="bg-white shadow-sm">
     <CardContent className="p-6">
       <div className="flex items-center mb-4">
         <div className="text-yellow-400 flex">
-          {[...Array(5)].map((_, i) => (
+          {[...Array(ratedStars)].map((_, i) => (
             <FaStar key={i} />
           ))}
         </div>
@@ -32,33 +38,44 @@ const Testimonial: React.FC<TestimonialProps> = ({ message, name, role }) => (
 
 const testimonials = [
   {
-    message: "This community helped me solve a complex algorithm problem I was stuck on for days. Someone took the time to walk me through it step by step.",
+    message:
+      "This community helped me solve a complex algorithm problem I was stuck on for days. Someone took the time to walk me through it step by step.",
     name: "Michael Chen",
-    role: "Frontend Developer"
+    role: "Frontend Developer",
+    ratedStars: 5,
   },
   {
-    message: "I found my current job through a connection I made in this group. The networking opportunities here are incredible for programmers.",
+    message:
+      "I found my current job through a connection I made in this group. The networking opportunities here are incredible for programmers.",
     name: "Sarah Johnson",
-    role: "Backend Engineer"
+    role: "Backend Engineer",
+    ratedStars: 5,
   },
   {
-    message: "As a self-taught developer, this community has been invaluable. The resources shared here have accelerated my learning journey tremendously.",
+    message:
+      "As a self-taught developer, this community has been invaluable. The resources shared here have accelerated my learning journey tremendously.",
     name: "Carlos Rodriguez",
-    role: "Full Stack Developer"
-  }
+    role: "Full Stack Developer",
+    ratedStars: 5,
+  },
 ];
 
 export default function CommunitySection() {
   return (
-    <section id="community" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+    <section
+      id="community"
+      className="py-20 bg-gradient-to-br from-gray-50 to-gray-100"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-skop-blue mb-4">Community Spotlight</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-skop-blue mb-4">
+            Настоящие отзывы
+          </h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            Hear from our members about what makes Some Kind Of Programmers special.
+            Вот что о нас говорят наши участники.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Testimonial
@@ -69,25 +86,31 @@ export default function CommunitySection() {
             />
           ))}
         </div>
-        
+
         <div className="mt-16">
           <Card className="bg-white shadow-md">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="md:w-2/3 mb-6 md:mb-0 md:pr-6">
-                  <h3 className="text-2xl font-bold text-skop-blue mb-4">Ready to join our growing community?</h3>
+                  <h3 className="text-2xl font-bold text-skop-blue mb-4">
+                    Готов присоединиться к нам?
+                  </h3>
                   <p className="text-gray-600 mb-6">
-                    Connect with over 1,000 developers who are sharing knowledge, helping each other, and building amazing things together.
+                    Познакомься более чем с 700 членами сообщества и извлеки для
+                    себя пользу по максимуму.
                   </p>
-                  <Button asChild className="bg-skop-orange hover:bg-skop-orange/90 text-white">
-                    <a 
-                      href="https://t.me/some_kind_of_programmers" 
-                      target="_blank" 
+                  <Button
+                    asChild
+                    className="bg-skop-orange hover:bg-skop-orange/90 text-white"
+                  >
+                    <a
+                      href="https://t.me/some_kind_of_programmers"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center"
                     >
                       <FaTelegram className="mr-2" />
-                      Join now on Telegram
+                      Присоединиться
                     </a>
                   </Button>
                 </div>
