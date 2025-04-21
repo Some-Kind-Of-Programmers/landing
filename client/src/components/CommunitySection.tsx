@@ -49,7 +49,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Backend Engineer",
     ratedStars: 5,
-    imgSrc: "/src/assets/my_photo.jpg",
+    imgSrc: "/my_photo.jpg",
   },
   {
     message:
@@ -57,7 +57,7 @@ const testimonials = [
     name: "Carlos Rodriguez",
     role: "Full Stack Developer",
     ratedStars: 5,
-    imgSrc: "/src/assets/my_photo.jpg",
+    imgSrc: "/my_photo.jpg",
   },
 ];
 
