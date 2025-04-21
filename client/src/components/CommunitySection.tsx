@@ -81,11 +81,7 @@ export default function CommunitySection() {
           <CardContent className="p-6">
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 rounded-full bg-gray-300 mr-3">
-                <img
-                  className="rounded-full"
-                  src="/src/assets/my_photo.jpg"
-                  alt="Photo"
-                />
+                <img className="rounded-full" src="/my_photo.jpg" alt="Photo" />
               </div>
               <div>
                 <div className="font-medium text-gray-800">
@@ -125,7 +121,10 @@ export default function CommunitySection() {
                     David Merkulov
                   </div>
                   <div className="text-sm text-gray-500">
-                    <a href="https://hao.vc/"><span className="text-blue-600">hao.vc</span></a> Founder, Ex-YandexGPT
+                    <a href="https://hao.vc/">
+                      <span className="text-blue-600">hao.vc</span>
+                    </a>{" "}
+                    Founder, Ex-YandexGPT
                   </div>
                 </div>
               </div>
