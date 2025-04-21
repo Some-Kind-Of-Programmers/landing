@@ -7,6 +7,7 @@ interface TestimonialProps {
   name: string;
   role: string;
   ratedStars: number;
+  imgSrc: string;
 }
 
 const Testimonial: React.FC<TestimonialProps> = ({
@@ -14,11 +15,12 @@ const Testimonial: React.FC<TestimonialProps> = ({
   name,
   role,
   ratedStars,
+  imgSrc
 }) => (
   <Card className="bg-white shadow-sm">
     <CardContent className="p-6">
       <div className="flex items-center mb-2">
-        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"><img src="/src/assets/my_photo.jpg" alt="Photo" /></div>
+        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"><img rounded-full src={imgSrc} alt="Photo" /></div>
         <div>
           <div className="font-medium text-gray-800">{name}</div>
           <div className="text-sm text-gray-500">{role}</div>
@@ -45,6 +47,7 @@ const testimonials = [
     name: "Michael Chen",
     role: "Frontend Developer",
     ratedStars: 5,
+    imgSrc: "/src/assets/photo.jpg"
   },
   {
     message:
@@ -52,6 +55,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Backend Engineer",
     ratedStars: 5,
+    imgSrc: "/src/assets/photo.jpg"
   },
   {
     message:
@@ -59,6 +63,7 @@ const testimonials = [
     name: "Carlos Rodriguez",
     role: "Full Stack Developer",
     ratedStars: 5,
+    imgSrc: "/src/assets/photo.jpg"
   },
 ];
 
@@ -104,6 +109,7 @@ export default function CommunitySection() {
               name={testimonial.name}
               role={testimonial.role}
               ratedStars={testimonial.ratedStars}
+              imgSrc={testimonial.imgSrc}
             />
           ))}
         </div>
