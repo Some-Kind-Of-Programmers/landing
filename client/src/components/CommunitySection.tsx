@@ -18,7 +18,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   <Card className="bg-white shadow-sm">
     <CardContent className="p-6">
       <div className="flex items-center mb-2">
-        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"><img src="/my_photo.jpg" alt="Photo" /></div>
+        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"><img src="/src/assets/my_photo.jpg" alt="Photo" /></div>
         <div>
           <div className="font-medium text-gray-800">{name}</div>
           <div className="text-sm text-gray-500">{role}</div>
