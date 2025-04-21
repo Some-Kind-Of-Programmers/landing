@@ -57,8 +57,8 @@ export default function FeaturesSection() {
                 Реактивный профессиональный рост
               </h3>
               <p className="text-gray-600">
-                Благодаря <a href="https://www.youtube.com/@SomeKindOfProgrammers">рубрике Some Kind Of Interview, саморазвитию и
-                знакомствам ты легко взлетишь на новый уровень в своей карьере.</a>
+                Благодаря <a className="text-blue-600"  href="https://www.youtube.com/@SomeKindOfProgrammers">Some Kind Of Interview</a>, саморазвитию и
+                знакомствам ты легко взлетишь на новый уровень в своей карьере.
               </p>
             </div>
           </div>
@@ -190,9 +190,11 @@ export default function FeaturesSection() {
                   placeholder="Type a message..."
                   className="flex-1 p-2 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
                 />
-                <button className="ml-2 p-2 bg-skop-orange text-white rounded-lg flex items-center justify-center">
-                  <FaPaperPlane className="h-4 w-4" />
-                </button>
+                <a href="https://t.me/some_kind_of_programmers">
+                  <button className="ml-2 p-2 bg-skop-orange text-white rounded-lg flex items-center justify-center">
+                    <FaPaperPlane className="h-4 w-4" />
+                  </button>
+                </a>
               </div>
             </div>
           </div>

@@ -15,12 +15,14 @@ const Testimonial: React.FC<TestimonialProps> = ({
   name,
   role,
   ratedStars,
-  imgSrc
+  imgSrc,
 }) => (
   <Card className="bg-white shadow-sm">
     <CardContent className="p-6">
       <div className="flex items-center mb-2">
-        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"><img rounded-full src={imgSrc} alt="Photo" /></div>
+        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3">
+          <img className="rounded-full" src={imgSrc} alt="Photo" />
+        </div>
         <div>
           <div className="font-medium text-gray-800">{name}</div>
           <div className="text-sm text-gray-500">{role}</div>
@@ -43,19 +45,11 @@ const Testimonial: React.FC<TestimonialProps> = ({
 const testimonials = [
   {
     message:
-      "This community helped me solve a complex algorithm problem I was stuck on for days. Someone took the time to walk me through it step by step. ",
-    name: "Michael Chen",
-    role: "Frontend Developer",
-    ratedStars: 5,
-    imgSrc: "/src/assets/my_photo.jpg"
-  },
-  {
-    message:
       "I found my current job through a connection I made in this group. The networking opportunities here are incredible for programmers.",
     name: "Sarah Johnson",
     role: "Backend Engineer",
     ratedStars: 5,
-    imgSrc: "/src/assets/my_photo.jpg"
+    imgSrc: "/src/assets/my_photo.jpg",
   },
   {
     message:
@@ -63,7 +57,7 @@ const testimonials = [
     name: "Carlos Rodriguez",
     role: "Full Stack Developer",
     ratedStars: 5,
-    imgSrc: "/src/assets/my_photo.jpg"
+    imgSrc: "/src/assets/my_photo.jpg",
   },
 ];
 
@@ -86,7 +80,13 @@ export default function CommunitySection() {
         <Card className="bg-white shadow-sm mb-8">
           <CardContent className="p-6">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+              <div className="w-10 h-10 rounded-full bg-gray-300 mr-3">
+                <img
+                  className="rounded-full"
+                  src="/src/assets/my_photo.jpg"
+                  alt="Photo"
+                />
+              </div>
               <div>
                 <div className="font-medium text-gray-800">
                   Биктимиров Камиль
@@ -97,11 +97,56 @@ export default function CommunitySection() {
               </div>
             </div>
 
-            <p className="text-gray-700">Я давно мечтал о пространстве, где смогу в абсолютно неформальной обстановке общаться с людьми в IT и помогать им. Делиться знаниями, событиями, опытом, полезными материалами. Ходить вместе на мероприятия, организовывать их. Однако я и не мог подумать, что со временем мои идеи разделят столько людей. Спасибо каждому участнику за вклад в развитие сообщества. Поверь, именно для тебя - да, тебя, дорогой читатель, оно и создавалось :)</p>
+            <p className="text-gray-700">
+              Я давно мечтал о пространстве, где смогу в абсолютно неформальной
+              обстановке общаться с людьми в IT и помогать им. Делиться
+              знаниями, событиями, опытом, полезными материалами. Ходить вместе
+              на мероприятия, организовывать их. Однако я и не мог подумать, что
+              со временем мои идеи разделят столько людей. Спасибо каждому
+              участнику за вклад в развитие сообщества. Поверь, именно для тебя
+              – да, тебя, дорогой читатель, оно и создавалось :)
+            </p>
           </CardContent>
         </Card>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="bg-white shadow-sm">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-2">
+                <div className="w-10 h-10 rounded-full bg-gray-300 mr-3">
+                  <img
+                    className="rounded-full"
+                    src="https://github.com/all-mute.png"
+                    alt="Photo"
+                  />
+                </div>
+                <div>
+                  <div className="font-medium text-gray-800">
+                    David Merkulov
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    <a href="https://hao.vc/"><span className="text-blue-600">hao.vc</span></a> Founder, Ex-YandexGPT
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center mb-4">
+                <div className="text-yellow-400 flex">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+              </div>
+
+              <p className="text-gray-700">
+                Камиль пригласил меня вступить в сообщество еще на самой ранней
+                стадии. Благодаря этому я: ходил на митапы всегда с компанией,
+                находил себе новые бизнес-знакомства, ко-фаундеров в стартапы.
+                Часто захожу смотреть мемы и листать анкеты новых участников.
+              </p>
+            </CardContent>
+          </Card>
+
           {testimonials.map((testimonial, index) => (
             <Testimonial
               key={index}

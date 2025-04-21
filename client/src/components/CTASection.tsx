@@ -46,7 +46,7 @@ export default function CTASection() {
             onClick={handleShare}
           >
             <FaShareAlt className="mr-2" />
-            Поделиться сообществом с коллегами/друзьями
+            Поделиться с коллегами/друзьями
           </Button>
         </div>
       </div>

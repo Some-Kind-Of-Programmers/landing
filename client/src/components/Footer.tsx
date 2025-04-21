@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { FaTelegram, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaTelegram, FaGithub, FaTwitter, FaYoutube, FaVk } from "react-icons/fa";
 import { scrollToElement, currentYear } from "@/lib/utils";
 
 export default function Footer() {
@@ -23,7 +23,7 @@ export default function Footer() {
             <p className="mb-4 text-gray-400">
               The ones who program their lives.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 items-center">
               <a
                 href="https://t.me/some_kind_of_programmers"
                 target="_blank"
@@ -32,8 +32,25 @@ export default function Footer() {
               >
                 <FaTelegram className="text-xl" />
               </a>
+              <a
+                href="https://www.youtube.com/@SomeKindOfProgrammers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-500 hover:text-white"
+              >
+                <FaYoutube className="text-2xl" />
+              </a>
+              <a
+                href="https://vk.com/some_kind_of_programmers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-white"
+              >
+                <FaVk className="text-2xl" />
+              </a>
             </div>
           </div>
+
 
           <div>
             <h3 className="text-skop-orange font-semibold mb-4">Быстрая навигация</h3>
