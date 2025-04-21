@@ -47,7 +47,7 @@ const testimonials = [
     name: "Michael Chen",
     role: "Frontend Developer",
     ratedStars: 5,
-    imgSrc: "/src/assets/photo.jpg"
+    imgSrc: "/src/assets/my_photo.jpg"
   },
   {
     message:
@@ -55,7 +55,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Backend Engineer",
     ratedStars: 5,
-    imgSrc: "/src/assets/photo.jpg"
+    imgSrc: "/src/assets/my_photo.jpg"
   },
   {
     message:
@@ -63,7 +63,7 @@ const testimonials = [
     name: "Carlos Rodriguez",
     role: "Full Stack Developer",
     ratedStars: 5,
-    imgSrc: "/src/assets/photo.jpg"
+    imgSrc: "/src/assets/my_photo.jpg"
   },
 ];
 
@@ -96,7 +96,7 @@ export default function CommunitySection() {
                 </div>
               </div>
             </div>
-            
+
             <p className="text-gray-700">Я давно мечтал о пространстве, где смогу в абсолютно неформальной обстановке общаться с людьми в IT и помогать им. Делиться знаниями, событиями, опытом, полезными материалами. Ходить вместе на мероприятия, организовывать их. Однако я и не мог подумать, что со временем мои идеи разделят столько людей. Спасибо каждому участнику за вклад в развитие сообщества. Поверь, именно для тебя - да, тебя, дорогой читатель, оно и создавалось :)</p>
           </CardContent>
         </Card>
