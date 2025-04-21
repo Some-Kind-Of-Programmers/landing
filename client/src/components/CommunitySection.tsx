@@ -17,6 +17,14 @@ const Testimonial: React.FC<TestimonialProps> = ({
 }) => (
   <Card className="bg-white shadow-sm">
     <CardContent className="p-6">
+      <div className="flex items-center mb-2">
+        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"><img src="/my_photo.jpg" alt="Photo" /></div>
+        <div>
+          <div className="font-medium text-gray-800">{name}</div>
+          <div className="text-sm text-gray-500">{role}</div>
+        </div>
+      </div>
+
       <div className="flex items-center mb-4">
         <div className="text-yellow-400 flex">
           {[...Array(ratedStars)].map((_, i) => (
@@ -24,14 +32,8 @@ const Testimonial: React.FC<TestimonialProps> = ({
           ))}
         </div>
       </div>
-      <p className="text-gray-700 mb-4">{message}</p>
-      <div className="flex items-center">
-        <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
-        <div>
-          <div className="font-medium text-gray-800">{name}</div>
-          <div className="text-sm text-gray-500">{role}</div>
-        </div>
-      </div>
+
+      <p className="text-gray-700">{message}</p>
     </CardContent>
   </Card>
 );
@@ -39,7 +41,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
 const testimonials = [
   {
     message:
-      "This community helped me solve a complex algorithm problem I was stuck on for days. Someone took the time to walk me through it step by step.",
+      "This community helped me solve a complex algorithm problem I was stuck on for days. Someone took the time to walk me through it step by step. ",
     name: "Michael Chen",
     role: "Frontend Developer",
     ratedStars: 5,
@@ -76,6 +78,24 @@ export default function CommunitySection() {
           </p>
         </div>
 
+        <Card className="bg-white shadow-sm mb-8">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+              <div>
+                <div className="font-medium text-gray-800">
+                  Биктимиров Камиль
+                </div>
+                <div className="text-sm text-gray-500">
+                  Основатель сообщества
+                </div>
+              </div>
+            </div>
+            
+            <p className="text-gray-700">Я давно мечтал о пространстве, где смогу в абсолютно неформальной обстановке общаться с людьми в IT и помогать им. Делиться знаниями, событиями, опытом, полезными материалами. Ходить вместе на мероприятия, организовывать их. Однако я и не мог подумать, что со временем мои идеи разделят столько людей. Спасибо каждому участнику за вклад в развитие сообщества. Поверь, именно для тебя - да, тебя, дорогой читатель, оно и создавалось :)</p>
+          </CardContent>
+        </Card>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Testimonial
@@ -83,6 +103,7 @@ export default function CommunitySection() {
               message={testimonial.message}
               name={testimonial.name}
               role={testimonial.role}
+              ratedStars={testimonial.ratedStars}
             />
           ))}
         </div>

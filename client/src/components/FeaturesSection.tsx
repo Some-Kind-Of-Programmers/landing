@@ -57,8 +57,8 @@ export default function FeaturesSection() {
                 Реактивный профессиональный рост
               </h3>
               <p className="text-gray-600">
-                Благодаря рубрике Some Kind Of Interview, саморазвитию и
-                знакомствам ты легко взлетишь на новый уровень в своей карьере.
+                Благодаря <a href="https://www.youtube.com/@SomeKindOfProgrammers">рубрике Some Kind Of Interview, саморазвитию и
+                знакомствам ты легко взлетишь на новый уровень в своей карьере.</a>
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function FeaturesSection() {
                     </div>
                     <p className="text-sm text-gray-700">
                       Ребят, дарова, работал кто-нибудь с Next.js 13 App Router?
-                      У меня возникли проблемы с серверными компонентами.
+                      У меня возникли проблемы с серверными компонентами
                     </p>
                   </div>
                 </div>
@@ -122,12 +122,10 @@ export default function FeaturesSection() {
                       Андрей Смирнов
                     </div>
                     <p className="text-sm text-gray-700">
-                      Могу тоже подсказать. Есть вот тут хороший туториал, может
-                      поможет:{" "}
-                      <a href="https://www.youtube.com/watch?v=ZVnjOPwW4ZA">
-                        <span className="text-blue-600">
-                          https://www.youtube.com/watch?v=ZVnjOPwW4ZA
-                        </span>
+                      Могу тоже подсказать. Есть <a href="https://www.youtube.com/watch?v=ZVnjOPwW4ZA"><span className="text-blue-600">вот тут</span></a> хороший туториал, может
+                      поможет
+                      <a >
+                        
                       </a>
                     </p>
                   </div>
