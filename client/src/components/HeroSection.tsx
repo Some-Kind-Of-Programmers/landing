@@ -50,7 +50,7 @@ export default function HeroSection() {
             </div>
             <div className="mt-8 flex items-center text-blue-100">
               <span className="font-semibold text-lg mr-2 opacity-90">
-                700+
+                800+
               </span>
               <span className="opacity-90">участников</span>
             </div>

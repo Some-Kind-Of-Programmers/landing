@@ -148,7 +148,7 @@ export default function FeaturesSection() {
                   </div>
                 </div>
 
-                <div className="flex">
+                <div className="flex">  
                   <div className="flex-shrink-0 mr-3">
                     <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs">
                       МС

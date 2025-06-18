@@ -45,19 +45,12 @@ const Testimonial: React.FC<TestimonialProps> = ({
 const testimonials = [
   {
     message:
-      "I found my current job through a connection I made in this group. The networking opportunities here are incredible for programmers.",
-    name: "Sarah Johnson",
-    role: "Backend Engineer",
+      "Здорово, что Камиль создал такое сообщество. Можно зайти, пообщаться, задать вопросы по коду и не только, поугарать над мемами. А так же быть в курсе ближайших митапов. Ну и главное - в сообществе собрались добрые и отзывчивые люди, с которыми можно встретиться ещё оффлайн или на квартирнике)",
+    name: "Влад Кожушко",
+    role: "Senior Android Developer",
     ratedStars: 5,
-    imgSrc: "/my_photo.jpg",
-  },
-  {
-    message:
-      "As a self-taught developer, this community has been invaluable. The resources shared here have accelerated my learning journey tremendously.",
-    name: "Carlos Rodriguez",
-    role: "Full Stack Developer",
-    ratedStars: 5,
-    imgSrc: "/my_photo.jpg",
+    imgSrc:
+      "https://squidex.jugru.team/api/assets/srm/52aa2436-ba2e-4082-8347-4da5ba76acdb/kozhushko.jpg?cache=3600&width=350&height=350&mode=CropUpsize",
   },
 ];
 
